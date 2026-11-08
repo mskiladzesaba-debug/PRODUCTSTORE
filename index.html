@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PRODUCT<span>STORE</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#">მთავარი</a></li>
+            <li><a href="#products">პროდუქტები</a></li>
+            <li><a href="#about">ჩვენ შესახებ</a></li>
+            <li><a href="#contact">კონტაქტი</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <header class="hero">
+        <h1>აღმოაჩინე საუკეთესო ტექნიკა</h1>
+        <p>შეარჩიე შენთვის სასურველი პროდუქტი</p>
+        <a href="#products" class="hero-btn">პროდუქტების ნახვა</a>
+    </header>
+
+    <main id="products">
+        <h2>ჩვენი პროდუქტები</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <h3>iPhone 16 Pro</h3>
+                <p>თანამედროვე სმარტფონი</p>
+                <span class="price">3200 ₾</span>
+                <button onclick="addToCart('iPhone 16 Pro')">კალათაში დამატება</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <h3>MacBook Air</h3>
+                <p>ძლიერი და სწრაფი ლეპტოპი</p>
+                <span class="price">3500 ₾</span>
+                <button onclick="addToCart('MacBook Air')">კალათაში დამატება</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <h3>AirPods Pro</h3>
+                <p>მაღალი ხარისხის ხმა</p>
+                <span class="price">750 ₾</span>
+                <button onclick="addToCart('AirPods Pro')">კალათაში დამატება</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <h3>Apple Watch</h3>
+                <p>ჭკვიანი საათი</p>
+                <span class="price">1100 ₾</span>
+                <button onclick="addToCart('Apple Watch')">კალათაში დამატება</button>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="about" id="about">
+        <h2>ჩვენ შესახებ</h2>
+        <p>TECHSTORE გთავაზობთ თანამედროვე ტექნიკას საუკეთესო ფასად.</p>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 TECHSTORE | ყველა უფლება დაცულია</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
